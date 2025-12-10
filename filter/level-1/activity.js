@@ -194,15 +194,21 @@ Write your solution using:
 const exercise4Array = ["red", "blue", "green", "yellow", "purple"];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.filter(color => color.startsWith("b"))
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.filter ((color) => {
+  if (color.startsWith("b")) {
+    return true
+  } else {
+    return false
+  }
+})
 
 // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
-// Expected: ["blue"]
+console.log("Exercise 4 - One-line:", exercise4Result1);
+console.log("Exercise 4 - Regular:", exercise4Result2);
+Expected: ["blue"]
 
 /*
 EXERCISE 5
@@ -218,13 +224,15 @@ Write your solution using:
 const exercise5Array = [2, 4, 6, 8, 10, 11, 12, 13, 14];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
+const exercise5Result1 = exercise5Array.filter(num => num % 4 === 0 )
 
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.filter((num) => {
+  return num % 4 === 0
+})
 
 // Uncomment to test:
-// console.log("Exercise 5 - One-line:", exercise5Result1);
-// console.log("Exercise 5 - Regular:", exercise5Result2);
-// Expected: [4, 8, 12]
+console.log("Exercise 5 - One-line:", exercise5Result1);
+console.log("Exercise 5 - Regular:", exercise5Result2);
+Expected: [4, 8, 12]
 
