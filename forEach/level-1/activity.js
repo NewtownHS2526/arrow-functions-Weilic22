@@ -119,10 +119,12 @@ Write your solution using:
 const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// exercise1Array.forEach(
+exercise1Array.forEach(n => console.log(n*2))
 
 // Your solution here (regular arrow function):
-// exercise1Array.forEach((
+exercise1Array.forEach((n => {
+  return console.log(n*2)
+}))
 
 // Expected output: 2, 4, 6, 8, 10 (each on a new line)
 
@@ -140,10 +142,12 @@ Write your solution using:
 const exercise2Array = ["apple", "banana", "orange"];
 
 // Your solution here (one-line arrow function):
-// exercise2Array.forEach(
+exercise2Array.forEach(word => console.log(word.toUpperCase(word)))
 
 // Your solution here (regular arrow function):
-// exercise2Array.forEach((
+exercise2Array.forEach((word => {
+  return console.log(word.toUpperCase(word))
+}))
 
 // Expected output: "APPLE", "BANANA", "ORANGE" (each on a new line)
 
@@ -162,14 +166,16 @@ const exercise3Array = [5, 10, 15, 20];
 let exercise3Sum = 0;
 
 // Your solution here (one-line arrow function):
-// exercise3Array.forEach(
+exercise3Array.forEach(n => exercise3Sum += n)
+
 
 // Your solution here (regular arrow function):
-// exercise3Array.forEach((
-
+exercise3Array.forEach((n => {
+  return exercise3Sum += n
+}))
 // Uncomment to test:
-// console.log("Exercise 3 - Sum:", exercise3Sum);
-// Expected: 50
+console.log("Exercise 3 - Sum:", exercise3Sum);
+Expected: 50
 
 /*
 EXERCISE 4

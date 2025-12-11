@@ -81,6 +81,7 @@ console.log("Example 2 - Regular:", longWords2); // ["elephant", "bird", "mouse"
 /*
 EXAMPLE 3: Filtering Numbers Greater Than a Value
 */
+
 const numbers2 = [10, 25, 5, 30, 15, 40];
 
 // One-line arrow function
