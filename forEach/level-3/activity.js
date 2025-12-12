@@ -143,4 +143,3 @@ let exercise5Max = exercise5Array[0]; // Start with first element
 // Uncomment to test:
 // console.log("Exercise 5 - Maximum:", exercise5Max);
 // Expected: 56
-
