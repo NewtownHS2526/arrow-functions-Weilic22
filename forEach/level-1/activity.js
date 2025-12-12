@@ -191,10 +191,12 @@ Write your solution using:
 const exercise4Array = ["red", "green", "blue"];
 
 // Your solution here (one-line arrow function):
-// exercise4Array.forEach(
+exercise4Array.forEach(color => console.log(`Color: ${color}`))
 
 // Your solution here (regular arrow function):
-// exercise4Array.forEach((
+exercise4Array.forEach((color)=> {
+  console.log("Color:" + color)
+})
 
 // Expected output: "Color: red", "Color: green", "Color: blue" (each on a new line)
 
@@ -212,10 +214,12 @@ Write your solution using:
 const exercise5Array = [2, 4, 6, 8];
 
 // Your solution here (one-line arrow function):
-// exercise5Array.forEach(
+exercise5Array.forEach(num => console.log(num**2))
 
 // Your solution here (regular arrow function):
-// exercise5Array.forEach((
+exercise5Array.forEach((num)=> {
+  console.log(num**2)
+})
 
 // Expected output: 4, 16, 36, 64 (each on a new line)
 

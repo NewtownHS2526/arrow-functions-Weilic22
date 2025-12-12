@@ -31,10 +31,12 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// exercise1Array.forEach(
+exercise1Array.forEach(item => console.log(`${item.product}: $${item.price * item.quantity} total`))
 
 // Your solution here (regular arrow function):
-// exercise1Array.forEach((
+exercise1Array.forEach((item) => {
+  console.log(`${item.product}: $${item.price * item.quantity} total`)
+})
 
 // Expected output:
 // "Laptop: $2000 total"
@@ -55,10 +57,14 @@ Write your solution using:
 const exercise2Array = ["hello", "world", "javascript", "coding"];
 
 // Your solution here (one-line arrow function):
-// exercise2Array.forEach(
+exercise2Array.filter(word => word.length > 5).forEach(word => console.log(word))
 
 // Your solution here (regular arrow function):
-// exercise2Array.forEach((
+exercise2Array.forEach((word) => {
+  if (word.length > 5) {
+    console.log(word)
+  }
+})
 
 // Expected output: "javascript", "coding" (each on a new line)
 
@@ -75,17 +81,21 @@ Write your solution using:
 */
 
 const exercise3Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const exercise3Array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let exercise3Product = 1;
-
+let exercise3Product2 = 1;
 // Your solution here (one-line arrow function):
-// exercise3Array.forEach(
+exercise3Array.forEach(num => exercise3Product *= num)
 
 // Your solution here (regular arrow function):
-// exercise3Array.forEach((
+exercise3Array2.forEach((num) => {
+  exercise3Product2 *= num
+})
 
 // Uncomment to test:
-// console.log("Exercise 3 - Product:", exercise3Product);
-// Expected: 3628800
+console.log("Exercise 3 - Product:", exercise3Product);
+console.log("Exercise 3 - Product:", exercise3Product2);
+Expected: 3628800
 
 /*
 EXERCISE 4

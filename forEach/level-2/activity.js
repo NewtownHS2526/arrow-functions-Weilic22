@@ -31,10 +31,12 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// exercise1Array.forEach(
+exercise1Array.forEach(person => console.log(`${person.name} is ${person.age} years old`))
 
 // Your solution here (regular arrow function):
-// exercise1Array.forEach((
+exercise1Array.forEach((person) => {
+  console.log(`${person.name} is ${person.age} years old`)
+})
 
 // Expected output:
 // "Alice is 25 years old"
@@ -55,10 +57,13 @@ Write your solution using:
 const exercise2Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// exercise2Array.forEach(
+exercise2Array.filter(num =>num % 2 === 0).forEach(num => console.log(num))
 
 // Your solution here (regular arrow function):
-// exercise2Array.forEach((
+exercise2Array.forEach((num) => {
+  if (num % 2 === 0)
+  console.log(num)
+})
 
 // Expected output: 2, 4 (each on a new line)
 
@@ -79,10 +84,12 @@ Write your solution using:
 const exercise3Array = ["apple", "banana", "cherry", "date"];
 
 // Your solution here (one-line arrow function):
-// exercise3Array.forEach((
+exercise3Array.forEach((fruit,index) => console.log(`Index ${index}: ${fruit}`))
 
 // Your solution here (regular arrow function):
-// exercise3Array.forEach((
+exercise3Array.forEach((fruit,index) => {
+  console.log(`Index ${index}: ${fruit}`)
+})
 
 // Expected output:
 // "Index 0: apple"
@@ -110,7 +117,7 @@ let exercise4Result = "";
 
 // Your solution here (regular arrow function):
 // exercise4Array.forEach((
-
+// SKIPPED BECAUSE OF DIFFICULTY
 // Uncomment to test:
 // console.log("Exercise 4 - Result:", exercise4Result);
 // Expected: "10 -> 20 -> 30 -> 40"
@@ -131,7 +138,7 @@ let exercise5Count = 0;
 
 // Your solution here (one-line arrow function):
 // exercise5Array.forEach(
-
+// SKIPPED BECAUSE OF DIFFICULTY
 // Your solution here (regular arrow function):
 // exercise5Array.forEach((
 
