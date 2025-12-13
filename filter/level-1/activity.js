@@ -50,7 +50,7 @@ SYNTAX EXAMPLES
 
 /*
 EXAMPLE 1: Filtering Even Numbers
-*/
+*/ 
 const numbers1 = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // One-line arrow function

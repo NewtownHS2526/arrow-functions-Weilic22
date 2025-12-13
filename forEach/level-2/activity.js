@@ -145,4 +145,3 @@ let exercise5Count = 0;
 // Uncomment to test:
 // console.log("Exercise 5 - Count:", exercise5Count);
 // Expected: 2
-

@@ -12,7 +12,7 @@ EXERCISE 1
 Given the array of objects:
 [
   { name: "Alice", age: 25 },
-  { name: "Bob", age: 17 },
+  { name: "Bob", age: 17 }, 
   { name: "Charlie", age: 30 },
   { name: "Diana", age: 16 }
 ]

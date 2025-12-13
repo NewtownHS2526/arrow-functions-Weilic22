@@ -21,7 +21,7 @@ Use filter() to create a new array with only the products that are in stock.
 
 Write your solution using:
 - One-line arrow function
-- Regular arrow function
+- Regular arrow function 
 */
 
 const exercise1Array = [

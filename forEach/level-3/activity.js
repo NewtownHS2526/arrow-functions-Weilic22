@@ -113,10 +113,13 @@ Write your solution using:
 const exercise4Array = ["apple", "banana", "cherry"];
 
 // Your solution here (one-line arrow function):
-// exercise4Array.forEach(
+exercise4Array.forEach(word => console.log(word.split("").reverse().join("")))
 
 // Your solution here (regular arrow function):
-// exercise4Array.forEach((
+exercise4Array.forEach((word) => {
+  const word2 = word.split("").reverse().join("")
+  console.log(word2)
+})
 
 // Expected output: "elppa", "ananab", "yrrehc" (each on a new line)
 
@@ -135,11 +138,15 @@ const exercise5Array = [12, 45, 8, 23, 56, 9];
 let exercise5Max = exercise5Array[0]; // Start with first element
 
 // Your solution here (one-line arrow function):
-// exercise5Array.forEach(
+exercise5Array.forEach(num => num > exercise5Max && (exercise5Max = num))
 
 // Your solution here (regular arrow function):
-// exercise5Array.forEach((
+exercise5Array.forEach((num) => {
+  if (num > exercise5Max) {
+    exercise5Max = num
+  }
+})
 
 // Uncomment to test:
-// console.log("Exercise 5 - Maximum:", exercise5Max);
-// Expected: 56
+console.log("Exercise 5 - Maximum:", exercise5Max);
+Expected: 56

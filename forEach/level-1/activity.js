@@ -173,6 +173,7 @@ exercise3Array.forEach(n => exercise3Sum += n)
 exercise3Array.forEach((n => {
   return exercise3Sum += n
 }))
+
 // Uncomment to test:
 console.log("Exercise 3 - Sum:", exercise3Sum);
 Expected: 50
